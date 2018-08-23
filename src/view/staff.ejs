@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>灵活用工税优</title>
+</head>
+<body>
+<!--导航-->
+<%- include('../component/basic/topTab.ejs',{
+"tabone":false,
+"tabtwo":false,
+"tabthree":true,
+"tabfour":false,
+"tabfive":false,
+"homepage":false
+}) %>
+
+<!--侧边栏-->
+<%-include('../component/basic/sidebar.ejs')%>
+
+
+<!-- 首页banner-->
+<%-include('../component/staff/section_banner.ejs')%>
+
+
+<!--什么是灵活用工？-->
+<%-include('../component/staff/section_one.ejs')%>
+
+<!--我们的服务-->
+<%-include('../component/staff/section_two.ejs')%>
+
+
+<!--底部导航-->
+
+<%-include('../component/basic/bottomFooter.ejs')%>
+
+
+</body>
+</html>

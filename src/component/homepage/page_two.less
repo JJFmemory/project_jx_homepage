@@ -1,0 +1,99 @@
+/*内容第一部分*/
+@colorDarkGray: #4a4a4a;
+@colorMiddleGray: #ababab;
+@colorLightGray: #dddddd;
+@colorBlue: #0392d4;
+@colorGreen:#66c4ac;
+@colorBlack: #000;
+@colorWhite: #fff;
+@clickEffect: hsla(0, 0%, 100%, 0.8);
+@clickColorBlue: #0994cc;
+
+.page_two{
+
+  position: relative;
+  margin-top: 80px;
+  background-color: #fcfcfc;
+  overflow: hidden;
+  .page_two_box{
+
+    height: 810px;
+    max-width: 1073px;
+    margin: 50px auto;
+    .jx_content_title{
+      margin: 50px 0;
+    }
+
+  }
+}
+.page_two_content{
+  margin-top: 70px;
+  &:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .content_box{
+    position: relative;
+    &:after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .list{
+      float: left;
+      width: 41%;
+      padding: 45px;
+      min-height: 200px;
+      border: 1px solid @colorGreen;
+      &.bg_1{
+        background: url("../images/homepage_icon_serve.png") no-repeat;
+        background-position: 113%;
+      }
+
+      &.bg_2{
+        background: url("../images/homepage_icon_serve1.png") no-repeat;
+        background-position: 113%;
+      }
+
+      &.bg_3{
+        background: url("../images/homepage_icon_serve2.png") no-repeat;
+        background-position: 113%;
+      }
+
+      &.bg_4{
+        background: url("../images/homepage_icon_serve3.png") no-repeat;
+        background-position: 113%;
+      }
+
+      .icon_title {
+        transition: all .2s;
+        .op_icon {
+          text-align: center;
+        }
+        .title {
+          text-align: left;
+          font-size: 26px;
+          color: @colorBlack;
+          padding: 10px 0;
+        }
+
+        &:hover .title{
+          color: @colorGreen;
+        }
+      }
+      .explian{
+        font-size: 16px;
+        width: 74%;
+        line-height: 34px;
+        color: @colorDarkGray;
+      }
+      &:hover{
+        border: 1px solid #ffffff;
+        box-shadow: 0 2px 12px #e9e9e9;
+      }
+    }
+  }
+
+}

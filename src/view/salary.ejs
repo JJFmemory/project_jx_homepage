@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智能工资条</title>
+</head>
+<body>
+<!--导航-->
+<%- include('../component/basic/topTab.ejs',{
+"tabone":false,
+"tabtwo":false,
+"tabthree":false,
+"tabfour":true,
+"tabfive":false,
+"homepage":false
+}) %>
+
+<!--侧边栏-->
+<%-include('../component/basic/sidebar.ejs')%>
+
+
+<!-- 首页banner-->
+<%-include('../component/salary/salary_banner.ejs')%>
+
+<!--更安全&更省力-->
+<%-include('../component/salary/salary_one.ejs')%>
+
+<!--更清晰&更及时-->
+<%-include('../component/salary/salary_two.ejs')%>
+
+<!--底部导航-->
+
+<%-include('../component/basic/bottomFooter.ejs')%>
+
+
+</body>
+</html>

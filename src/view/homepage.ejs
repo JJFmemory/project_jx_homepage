@@ -6,6 +6,19 @@
 </head>
 <body>
 
+<!--导航-->
+<%- include('../component/basic/topTab.ejs',{
+"tabone":true,
+"tabtwo":false,
+"tabthree":false,
+"tabfour":false,
+"tabfive":false,
+"homepage":false
+}) %>
+
+<!--侧边栏-->
+<%-include('../component/basic/sidebar.ejs')%>
+
 
 <!-- 首页banner-->
 <%-include('../component/homepage/page_banner.ejs')%>
@@ -16,10 +29,23 @@
 <!--我们能为您提供什么-->
 <%-include('../component/homepage/page_one.ejs')%>
 
+<!--服务保障-->
+<%-include('../component/homepage/page_two.ejs')%>
+
+<!--合作伙伴-->
+<%-include('../component/homepage/page_three.ejs')%>
+
 
 <!--底部导航-->
 
+<%-include('../component/basic/bottomFooter.ejs')%>
 
 
 </body>
+<script>
+
+
+
+    mobilePageJump();
+</script>
 </html>

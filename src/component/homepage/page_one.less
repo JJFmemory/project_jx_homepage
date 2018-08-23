@@ -1,1 +1,57 @@
 /*内容第一部分*/
+.page_one_content{
+  margin-top: 70px;
+
+  .content_box{
+    position: relative;
+    text-align: center;
+    width: 78%;
+    margin: 0 auto;
+    max-width: 1200px;
+    &:after{
+      content: "";
+      display:block;
+      clear: both;
+    }
+
+    .provide_box{
+      float: left;
+      height: 270px;
+      width: 21%;
+      padding: 0 8px;
+      background: #fff;
+      border: 1px solid #e9e9e9;
+      margin: 0 4px;
+      border-radius: 5px;
+      &:hover{
+        border: 1px solid #66c4ac;
+      }
+
+      .saas_icon{
+        margin: 25px 0 16px 0;
+        img{
+          width: 46px;
+        }
+
+      }
+      .title{
+        font-size: 20px;
+        color: #4a4a4a;
+        font-weight:bold;
+        span{
+          font-weight: lighter;
+        }
+      }
+      .box_content{
+        text-align: left;
+        padding: 10px;
+        color: #ababab;
+        p{
+          padding: 5px 0;
+        }
+
+      }
+    }
+
+  }
+}

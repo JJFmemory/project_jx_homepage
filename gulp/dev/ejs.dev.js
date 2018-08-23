@@ -29,12 +29,12 @@ function devEjs() {
 
                 addHtml += "<meta name='renderer' content='webkit' />\n";
 
-                addHtml +="<meta name='keywords' content='企业薪酬服务，薪酬管理，社保代理，公积金，工资代发，报税，工资计算，薪酬计算，劳务工资，社保，社保代缴，缴社保，缴公积金，发工资，嘉薪，个税，劳务工资，算工资' />\n";
+                addHtml +="<meta name='keywords' content='企业薪酬服务，薪酬管理，社保代理，工资代发，报税，工资计算，薪酬计算，劳务工资，社保，社保代缴，缴社保，发工资，嘉薪，个税，劳务工资，算工资' />\n";
 
                 addHtml +='<meta name="description" content="专注在弹性福利领域，面对企业提供服务，帮助企业发放和管理员工福利、奖励。"/>\n'
 
 
-                addHtml += "<link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />\n";
+                addHtml += "<link rel='shortcut icon' href='http://jx-res.oss-cn-shanghai.aliyuncs.com/test-images/20180528/c28cbf5cf68b80707a8dd1ccea3264c9.png' type='image/x-icon' />\n";
 
 
                 addHtml += "<link rel='stylesheet'  href='../css/jx_homepage.css'/>\n";//第二版开发样式
@@ -54,9 +54,9 @@ function devEjs() {
         .pipe(cheerio({
 
             run:function($){
-                var addJsMain = '\n<script src="../js/jx_homepage.js"></script>\n';//主要的脚本文件
+                var addJsMain = '\n<script src="../js/jquery-3.0.0.min.js"></script>\n';//主要的脚本文件
 
-                var addJsHtml="";//保存用的业务脚本
+                var addJsHtml= '\n<script src="../js/jx_homepage.js"></script>\n';//保存用的业务脚本
 
                 var addJsRun="<script>\n";//运行的脚本
 

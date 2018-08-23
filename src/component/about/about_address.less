@@ -1,0 +1,72 @@
+/*关于我们模块2内容*/
+
+.about_address{
+  margin-top: 84px;
+  background:url("../images/about_map_bg1.jpg") no-repeat;
+  background-size: cover;
+  padding-bottom: 1020px;
+  //background-size: 100%;
+  @media screen and(max-width: 1374px){
+    background-size: 100%;
+    padding-bottom: 640px;
+  }
+  @media screen and(max-width: 1125px){
+    background-size: 100%;
+    padding-bottom: 480px;
+  }
+  .address_content{
+    display: flex;
+    overflow: auto;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1100px;
+    overflow-y: hidden;
+
+    .address_box{
+      height: 184px;
+      min-width: 15%;
+      flex: 1;
+      padding: 0 28px;
+      background: #fff;
+      margin: 36px 28px 0 0;
+      box-shadow: 0 2px 12px #dddddd;
+      @media screen and(max-width: 1374px){
+        padding: 0 20px;
+        margin: 36px 10px 0 0;
+      }
+      &:hover{
+        box-shadow: none;
+      }
+
+      .address_title{
+        text-align: left;
+        color: #fa8748;
+        font-size: 22px;
+        padding: 22px 0 16px 0;
+        @media screen and(max-width: 1374px){
+          font-size: 20px;
+          padding: 20px 0 14px 0;
+
+        }
+
+      }
+
+      .address_text{
+        color: #ababab;
+        font-size: 16px;
+        text-align: left;
+
+        p{
+
+          &:first-child{
+            line-height: 25px;
+          }
+
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+</head>
+<body>
+<!--导航-->
+<%- include('../component/basic/topTab.ejs',{
+"tabone":false,
+"tabtwo":false,
+"tabthree":false,
+"tabfour":false,
+"tabfive":true,
+"homepage":false
+}) %>
+
+<!--侧边栏-->
+<%-include('../component/basic/sidebar.ejs')%>
+
+
+<!--banner-->
+<%-include('../component/about/about_banner.ejs')%>
+
+<!--介绍-->
+<%-include('../component/about/about_us.ejs')%>
+
+<!--地图-->
+<%-include('../component/about/about_address.ejs')%>
+
+
+<!--底部导航-->
+<%-include('../component/basic/bottomFooter.ejs')%>
+
+
+</body>
+</html>

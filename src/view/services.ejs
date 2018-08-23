@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>薪酬服务</title>
+</head>
+<body>
+<!--导航-->
+<%- include('../component/basic/topTab.ejs',{
+"tabone":false,
+"tabtwo":true,
+"tabthree":false,
+"tabfour":false,
+"tabfive":false,
+"homepage":false
+}) %>
+
+<!--侧边栏-->
+<%-include('../component/basic/sidebar.ejs')%>
+
+
+<!--banner-->
+<%-include('../component/services/module_banner.ejs')%>
+
+<!--如何发工资-->
+<%-include('../component/services/module_one.ejs')%>
+
+
+<!--如何查看工资及体现-->
+<%-include('../component/services/module_two.ejs')%>
+
+
+<!--代缴社保、公积金、个税-->
+<%-include('../component/services/module_three.ejs')%>
+
+
+<!--垫资发工资-->
+<%-include('../component/services/module_four.ejs')%>
+
+
+<!--底部导航-->
+<%-include('../component/basic/bottomFooter.ejs')%>
+
+
+</body>
+</html>

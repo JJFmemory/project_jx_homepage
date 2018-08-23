@@ -1,0 +1,74 @@
+/*薪酬服务模块1内容*/
+.module_one{
+  margin-top: 80px;
+  background-color: #f8f8f9;
+  overflow: hidden;
+  .module_box{
+    position: relative;
+    height: 468px;
+    max-width: 1073px;
+    margin: 50px auto;
+
+    .box_Broadcast{
+      img{
+        margin-top: 40px;
+      }
+      .bot{
+          text-align: left;
+          padding-left: 200px;
+
+          li{
+            cursor: pointer;
+            display: inline-block;
+            zoom: 1;
+            width: 24px;
+            height: 3px;
+            border: 1px solid #ea5e25;
+            margin: 0 4px;
+            &:first-child{
+              background: #ea5e25;
+            }
+          }
+        }
+    }
+
+    .box_content{
+      position: absolute;
+      top: 24px;
+      right: -200px;
+      .content_list{
+        height: 114px;
+        .list_number{
+          color: #66c4ac;
+          font-size: 60px;
+          position: relative;
+          &:after{
+            content:"";
+            height: 70px;
+            display: block;
+            position: absolute;
+            top:0;
+            left:82px;
+            border-left: 1px solid #66c4ac;
+          }
+        }
+
+        .list_text{
+          font-size: 26px;
+          color: #4a4a4a;
+          padding-left: 38px;
+          vertical-align: top;
+
+          p{
+            font-size: 16px;
+            width: 56%;
+            font-weight: lighter;
+            position: relative;
+            top:-28px;
+            left:108px;
+          }
+        }
+      }
+    }
+  }
+}

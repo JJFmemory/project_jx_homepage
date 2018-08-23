@@ -1,18 +1,30 @@
-/*嘉薪官网顶部导航栏*/
+
 .jx_nav{
   width: 100%;
   margin: 0 auto;
+  position: fixed;
+  height: 70px;
+  top: 0;
+  left: 0;
+  z-index: 50;
   .jx_nav_content{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+    position: relative;
+    padding: 0 10px;
+    height: 60px;
+    margin: 0 auto;
     background: #ffffff;
     box-shadow: 1px 0 6px #dddddd;
-    line-height: 64px;
     .jx_nav_logo{
+      position: absolute;
+      top:9px;
+      left: 21%;
       color: #df5411;
       font-size: 20px;
       font-weight: bold;
+      cursor: pointer;
+      @media screen and(max-width: 1073px){
+        left: 2%;
+      }
       img{
         width: 40px;
         height: 40px;
@@ -22,24 +34,87 @@
 
       }
 
+
     }
 
     .jx_switch{
-     margin-left: 80px;
-      .switch_text{
-        padding: 0 15px;
-        &.one{
-          color: #df5411;
+      position: absolute;
+      top:20px;
+      right: 38%;
+      @media screen and(max-width: 1920px){
+        right: 38%;
+      }
+      @media screen and(max-width: 1374px){
+        right: 35%;
+      }
+      @media screen and(max-width: 1037px){
+
+        right: 27%;
+      }
+
+
+      ul {
+        list-style-type: none;
+        height: 100%;
+
+        .one{
+          a{
+            color: #df5411;
+          }
+        }
+
+        li {
+          display: inline-block;
+          padding: 0 20px;
+
+          @media screen and(max-width: 1920px){
+
+            padding: 0 20px;
+
+          }
+
+
+          @media screen and(max-width: 1374px){
+
+            padding: 0 6px;
+
+          }
+
+
+          a {
+            position: relative;
+            display: inline-block;
+            color: #4a4a4a;
+            &:hover {
+              color: #df5411;
+              cursor: pointer;
+              transition: all ease-in-out .2s;
+            }
+            &:active{
+              color: #df5411;
+              cursor: pointer;
+              transition: all ease-in-out .2s;
+            }
+          }
         }
       }
     }
 
     .jx_nav_right{
+      position: absolute;
+      top:20px;
+      right:20%;
+      @media screen and(max-width: 1073px){
+        right: 2%;
+      }
       .jx_log_in{
         background-color: #df5411;
         border-radius: 5px;
         padding: 8px 12px;
         color: #ffffff;
+        &:hover{
+          color: #e9e9e9;
+        }
 
       }
 
@@ -47,4 +122,5 @@
 
   }
 }
+
 
